@@ -1,0 +1,120 @@
+/* Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ff3100ad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+}
+
+.container {
+    width: 100%;
+    max-width: 487px;
+    background-color: #fbf60887;
+    box-shadow: 11px 14px 19px 3px rgb(0 0 0 / 84%);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 2.5rem;
+    color: #4A90E2;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.user_action {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.login_btn,
+.reg_btn {
+    padding: 12px 30px;
+    background-color: #4A90E2;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login_btn:hover,
+.reg_btn:hover {
+    background-color: #357ABD;
+}
+
+/* Forms Styling */
+form {
+    display: none;
+    margin-top: 20px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+form input:focus {
+    border-color: #4A90E2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4A90E2;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #357ABD;
+}
+
+/* Show Forms on Click */
+form.register {
+    display: block;
+}
+
+form.login {
+    display: block;
+}
+
+/* Animations */
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+form {
+    animation: slideInFromTop 0.5s ease-out;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>BloodLink</h1>
+        </div>
+        <div class="user_action">
+            <div class="login_btn">Login</div>
+            <div class="reg_btn">Register</div>
+        </div>
+
+        <!-- Register Form -->
+        <form id="registerForm" action="/register" method="POST" style="display:none;">
+            <label for="first_name">
+                <input name="first_name" type="text" placeholder="First Name" required>
+            </label>
+            <label for="last_name">
+                <input name="last_name" type="text" placeholder="Last Name" required>
+            </label>
+            <label for="email">
+                <input name="email" type="email" placeholder="Email" required>
+            </label>
+            <label for="username">
+                <input name="username" type="text" placeholder="Username" required>
+            </label>
+            <label for="password">
+                <input name="password" type="password" placeholder="Password" required>
+            </label>
+            <button type="submit">Register</button>
+        </form>
+
+        <!-- Login Form -->
+        <form id="loginForm" action="/login" method="POST" style="display:none;">
+            <label for="username">
+                <input name="username" type="text" placeholder="Username" required>
+            </label>
+            <label for="password">
+                <input name="password" type="password" placeholder="Password" required>
+            </label>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <script src="index.js"></script> <!-- Link to your JS script -->
+</body>
+</html>
